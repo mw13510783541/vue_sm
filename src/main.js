@@ -9,9 +9,11 @@ import '@/assets/fonts/iconfont.css'
 import axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import ZkTable from 'vue-table-with-tree-grid'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.component('tree-table', ZkTable)
 
 // 设置基础路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
